@@ -19,12 +19,12 @@
 </head>
 <body>
 
-    <main class="bg-dark-pink" style="height: 100vh;">
+    <main class="bg-dark-pink padd-10" style="height: 100vh;">
 
         <div class="debug container padd-10">
 
             <!-- start: title -->
-            <h1 class="debug col-white font-size-70 text-bold">
+            <h1 class="debug col-white font-size-70 text-bold text-align-center">
                 Calcola il prezzo del tuo biglietto
             </h1>
             <!-- end: title -->
@@ -48,7 +48,6 @@
                         <label for="passengerAge" class="form-label col-dark-pink text-bold">Data di nascita</label>
 
                         <input id="passengerAge" class="form-control" style="border: 1px solid var(--color-dark-pink);" type="date"/>
-                        <!-- <input type="number" class="form-control" id="passengerAge" aria-describedby="emailHelp" placeholder="Per esempio, scrivi: 25"> -->
                     </div>
 
                 </div>
@@ -58,22 +57,67 @@
                     <button type="submit" class="btn btn-primary margin-auto" onclick="generateTicket()">Genera biglietto</button>
 
                     <button type="submit" class="btn btn-secondary margin-auto bg-dark-gray" style="border: 1 px solid var(--color-dark-gray);">Annulla</button>
-                </div>
-
-                <p id="p_result">
-
-                </p>
-                
+                </div>                
             </div> 
             <!-- end: first card, input passenger data -->
 
 
             <!-- start: title -->
-            <h1 class="debug col-white font-size-60 text-bold">
+            <h1 class="debug col-white font-size-60 text-bold text-align-center">
                 Il tuo biglietto
             </h1>
             <!-- end: title -->
 
+            <!-- start: ticket generated -->
+            <div class="container disp-none debug bg-white padd-10" id="genTicket">
+                <h3 class="text-bold">
+                    DETTAGLIO PASSEGGERI    
+                </h3>
+                
+                <div class="debug flex flex-dir-row padd-5" style="min-height: 150px;">
+                    
+                    <div class="debug width-30 bg-dark-gray padd-10 font-size-20">
+                        <span class="text-bold">
+                            NOME PASSEGGERO
+                        </span> <br>
+                        <p style="margin-bottom: 0px;" class="text-bold" id="genPassengerName"></p>
+                    </div>
+
+                    <div class="debug width-70 padd-10 flex flex-dir-row just-cont-between">
+
+                        <div class="debug padd-5 flex flex-dir-col just-cont-between">
+                            <span class="text-bold">
+                                Offerta
+                            </span>
+                            <p style="margin-bottom: 0px;" id="genPassAge"></p>
+                        </div>
+
+                        <div class="debug padd-5 flex flex-dir-col just-cont-between">
+                            <span class="text-bold">
+                                Carrozza
+                            </span>
+                            <p style="margin-bottom: 0px;" id="genCoach"></p>
+                        </div>
+
+                        <div class="debug padd-5 flex flex-dir-col just-cont-between">
+                            <span class="text-bold">
+                                Codice CP
+                            </span>
+                            <p style="margin-bottom: 0px;" id="genCPcode"></p>
+                        </div>
+
+                        <div class="debug padd-5 flex flex-dir-col just-cont-between">
+                            <span class="text-bold">
+                                Costo Biglietto
+                            </span>
+                            <p style="margin-bottom: 0px;" id="genPrice"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end: ticket generated -->
+            
         </div>
 
        

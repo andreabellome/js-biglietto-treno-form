@@ -93,6 +93,10 @@ a{
     text-decoration: underline;
 }
 
+.disp-none{
+    display: none;
+}
+
 .disp-inline-block{
     display: inline-block;
 }
