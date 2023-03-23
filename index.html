@@ -54,9 +54,9 @@
 
                 <div class="debug width-80 flex flex-dir-row align-it-center just-cont-between padd-10">
 
-                    <button type="submit" class="btn btn-primary margin-auto" onclick="generateTicket()">Genera biglietto</button>
+                    <button type="submit" class="btn btn-primary margin-auto" id="genPressButt" onclick="generateTicket()">Genera biglietto</button>
 
-                    <button type="submit" class="btn btn-secondary margin-auto bg-dark-gray" style="border: 1 px solid var(--color-dark-gray);">Annulla</button>
+                    <button type="submit" class="btn btn-secondary margin-auto bg-dark-gray" style="border: 1 px solid var(--color-dark-gray);" onclick="history.go(0);">Annulla</button>
                 </div>                
             </div> 
             <!-- end: first card, input passenger data -->
@@ -73,7 +73,7 @@
                 <h3 class="text-bold">
                     DETTAGLIO PASSEGGERI    
                 </h3>
-                
+
                 <div class="debug flex flex-dir-row padd-5" style="min-height: 150px;">
                     
                     <div class="debug width-30 bg-dark-gray padd-10 font-size-20">

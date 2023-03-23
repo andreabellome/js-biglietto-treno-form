@@ -71,8 +71,8 @@ function generateTicket(){
 
 var element = document.getElementById("genTicket");
 
-const button = document.querySelector("button")
-button.addEventListener("click", () => {
+const buttonGen = document.getElementById("genPressButt")
+buttonGen.addEventListener("click", () => {
     element.style.display = "inline-block";
 })
 
