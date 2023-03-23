@@ -21,30 +21,30 @@
 
     <main class="bg-dark-pink padd-10" style="height: 100vh;">
 
-        <div class="debug container padd-10">
+        <div class=" container padd-10">
 
             <!-- start: title -->
-            <h1 class="debug col-white font-size-70 text-bold text-align-center">
+            <h1 class=" col-white font-size-70 text-bold text-align-center">
                 Calcola il prezzo del tuo biglietto
             </h1>
             <!-- end: title -->
 
             <!-- start: first card, input passenger data -->
-            <div class="container debug bg-white flex flex-dir-col just-cont-around align-it-center padd-10 mb-20" style="border-radius: 20px;">
+            <div class="container  bg-white flex flex-dir-col just-cont-around align-it-center padd-10 mb-20" style="border-radius: 20px;">
 
-                <div class="debug width-80 mb-20 flex flex-dir-row just-cont-between padd-10">
+                <div class=" width-80 mb-20 flex flex-dir-row just-cont-between padd-10">
                     
-                    <div class="debug width-30 padd-5 flex flex-dir-col align-it-center">
+                    <div class=" width-30 padd-5 flex flex-dir-col align-it-center">
                         <label for="passengerNameSurname" class="form-label col-dark-pink text-bold">Nome Cognome</label>
                         <input type="text" class="form-control" style="border: 1px solid var(--color-dark-pink);" id="passengerNameSurname" aria-describedby="emailHelp" placeholder="Per esempio, scrivi: Mario Rossi">
                     </div>
 
-                    <div class="debug width-30 padd-5 flex flex-dir-col align-it-center">
+                    <div class=" width-30 padd-5 flex flex-dir-col align-it-center">
                         <label for="kmNumber" class="form-label col-dark-pink text-bold">Numero di km da percorrere</label>
                         <input type="number" class="form-control" style="border: 1px solid var(--color-dark-pink);" id="kmNumber" aria-describedby="emailHelp" placeholder="Per esempio, scrivi: 50">
                     </div>
 
-                    <div class="debug width-30 padd-5 flex flex-dir-col align-it-center">
+                    <div class=" width-30 padd-5 flex flex-dir-col align-it-center">
                         <label for="passengerAge" class="form-label col-dark-pink text-bold">Data di nascita</label>
 
                         <input id="passengerAge" class="form-control" style="border: 1px solid var(--color-dark-pink);" type="date"/>
@@ -52,7 +52,7 @@
 
                 </div>
 
-                <div class="debug width-80 flex flex-dir-row align-it-center just-cont-between padd-10">
+                <div class=" width-80 flex flex-dir-row align-it-center just-cont-between padd-10">
 
                     <button type="submit" class="btn btn-primary margin-auto" id="genPressButt" onclick="generateTicket()">Genera biglietto</button>
 
@@ -61,52 +61,52 @@
             </div> 
             <!-- end: first card, input passenger data -->
 
-
             <!-- start: title -->
-            <h1 class="debug col-white font-size-60 text-bold text-align-center">
+            <h1 class=" disp-none col-white font-size-60 text-bold text-align-center" id="genTitleTicket">
                 Il tuo biglietto
             </h1>
             <!-- end: title -->
 
             <!-- start: ticket generated -->
-            <div class="container disp-none debug bg-white padd-10" id="genTicket">
+            <div class="container disp-none bg-white padd-15" id="genTicket">
+
                 <h3 class="text-bold">
                     DETTAGLIO PASSEGGERI    
                 </h3>
 
-                <div class="debug flex flex-dir-row padd-5" style="min-height: 150px;">
+                <div class=" flex flex-dir-row" style="min-height: 150px; border: 1px solid black;">
                     
-                    <div class="debug width-30 bg-dark-gray padd-10 font-size-20">
+                    <div class=" width-30 bg-dark-gray padd-10 font-size-20">
                         <span class="text-bold">
                             NOME PASSEGGERO
                         </span> <br>
                         <p style="margin-bottom: 0px;" class="text-bold" id="genPassengerName"></p>
                     </div>
 
-                    <div class="debug width-70 padd-10 flex flex-dir-row just-cont-between">
+                    <div class=" width-70 padd-10 flex flex-dir-row just-cont-between">
 
-                        <div class="debug padd-5 flex flex-dir-col just-cont-between">
+                        <div class=" padd-5 flex flex-dir-col just-cont-between">
                             <span class="text-bold">
                                 Offerta
                             </span>
                             <p style="margin-bottom: 0px;" id="genPassAge"></p>
                         </div>
 
-                        <div class="debug padd-5 flex flex-dir-col just-cont-between">
+                        <div class=" padd-5 flex flex-dir-col just-cont-between">
                             <span class="text-bold">
                                 Carrozza
                             </span>
                             <p style="margin-bottom: 0px;" id="genCoach"></p>
                         </div>
 
-                        <div class="debug padd-5 flex flex-dir-col just-cont-between">
+                        <div class=" padd-5 flex flex-dir-col just-cont-between">
                             <span class="text-bold">
                                 Codice CP
                             </span>
                             <p style="margin-bottom: 0px;" id="genCPcode"></p>
                         </div>
 
-                        <div class="debug padd-5 flex flex-dir-col just-cont-between">
+                        <div class=" padd-5 flex flex-dir-col just-cont-between">
                             <span class="text-bold">
                                 Costo Biglietto
                             </span>

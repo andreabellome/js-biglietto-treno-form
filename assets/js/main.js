@@ -68,14 +68,11 @@ function generateTicket(){
 
 }
 
-
-var element = document.getElementById("genTicket");
+var elementH1 = document.getElementById("genTitleTicket");
+var elementDiv = document.getElementById("genTicket");
 
 const buttonGen = document.getElementById("genPressButt")
 buttonGen.addEventListener("click", () => {
-    element.style.display = "inline-block";
+    elementDiv.style.display = "inline-block";
+    elementH1.style.display = "block";
 })
-
-
-
-
